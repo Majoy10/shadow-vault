@@ -19,18 +19,18 @@ Download ``vault.exe`` from the **Releases** section, open PowerShell in your wo
 
 ````powershell
 # Encrypt a single file
-.\vault.exe encrypt .\secret.txt
+.\vault.exe encrypt .\your_file_name.txt
 
 # Encrypt a folder
-.\vault.exe encrypt .\project_folder -o .\project_folder.vault
+.\vault.exe encrypt .\your_folder_name -o .\your_folder_name.vault
 
 # Encrypt and securely shred the original file
-.\vault.exe encrypt .\secret.txt --shred
+.\vault.exe encrypt .\your_file_name.txt --shred
 
 # Decrypt a file or folder archive
-.\vault.exe decrypt .\project_folder.vault
-.\vault.exe decrypt .\secret.txt.vault -o .\restored.txt
+.\vault.exe decrypt .\your_folder_name.vault
+.\vault.exe decrypt .\your_file_name.vault -o .\restored_file_name.txt
 
 # Permanently shred a file (default 3 passes)
-.\vault.exe shred .\secret.txt
-.\vault.exe shred .\secret.txt -p 5
+.\vault.exe shred .\your_file_name.txt
+.\vault.exe shred .\your_file_name.txt -p 5
