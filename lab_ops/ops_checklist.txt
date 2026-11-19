@@ -1,4 +1,0 @@
-checklist:
-1. Verify backup integrity
-2. Rotate API tokens
-3. Clean temp artifacts
